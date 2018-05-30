@@ -1,4 +1,4 @@
-package org.androidchile.droidfestival.feature.schedule
+package org.androidchile.droidfestival.feature.schedule.presentation
 
 import android.os.Bundle
 import org.androidchile.droidfestival.DroidFestivalApplication
