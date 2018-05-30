@@ -17,11 +17,14 @@ package org.androidchile.droidfestival.fundation.di
 
 import dagger.Component
 import org.androidchile.droidfestival.DroidFestivalApplication
+import org.androidchile.droidfestival.feature.schedule.ScheduleActivity
 import org.androidchile.droidfestival.fundation.di.viewmodel.ViewModelModule
 import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [ApplicationModule::class, ViewModelModule::class])
 interface ApplicationComponent {
+
     fun inject(application: DroidFestivalApplication)
+    fun inject(activity: ScheduleActivity)
 }
