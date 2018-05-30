@@ -57,6 +57,24 @@ freeline.py
 freeline/
 freeline_project_description.json
 
+# Eclipse project files
+.classpath
+.project
+  
+# Android Studio
+.idea
+.gradle
+/*/local.properties
+/*/out
+/*/*/build
+build
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
+
 # fastlane
 fastlane/report.xml
 fastlane/Preview.html
