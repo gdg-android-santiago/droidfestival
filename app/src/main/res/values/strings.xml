@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Droid Festival</string>
+
+    <string name="action_refresh">Refresh</string>
+
+    <string name="failure_network_connection">No Network Connection.</string>
+    <string name="failure_server_error">Server Error</string>
+    <string name="failure_schedules_list_unavailable">Schedule Unavailable.</string>
+    <string name="failure_schedule_non_existent">Schedule Not Existent.</string>
 </resources>

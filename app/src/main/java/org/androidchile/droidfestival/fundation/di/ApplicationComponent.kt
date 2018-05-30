@@ -17,7 +17,8 @@ package org.androidchile.droidfestival.fundation.di
 
 import dagger.Component
 import org.androidchile.droidfestival.DroidFestivalApplication
-import org.androidchile.droidfestival.feature.schedule.ScheduleActivity
+import org.androidchile.droidfestival.feature.schedule.presentation.ScheduleActivity
+import org.androidchile.droidfestival.feature.schedule.presentation.ScheduleFragment
 import org.androidchile.droidfestival.fundation.di.viewmodel.ViewModelModule
 import javax.inject.Singleton
 
@@ -25,6 +26,12 @@ import javax.inject.Singleton
 @Component(modules = [ApplicationModule::class, ViewModelModule::class])
 interface ApplicationComponent {
 
+    // Main Application
     fun inject(application: DroidFestivalApplication)
+
+    // Activities
     fun inject(activity: ScheduleActivity)
+
+    // Fragments
+    fun inject(fragment: ScheduleFragment)
 }

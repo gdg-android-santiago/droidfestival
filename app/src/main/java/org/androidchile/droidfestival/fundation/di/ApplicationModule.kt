@@ -22,6 +22,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.androidchile.droidfestival.BuildConfig
 import org.androidchile.droidfestival.DroidFestivalApplication
+import org.androidchile.droidfestival.feature.schedule.domain.ScheduleRepository
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
@@ -47,4 +48,6 @@ class ApplicationModule(private val application: DroidFestivalApplication) {
         }
         return okHttpClientBuilder.build()
     }
+
+    @Provides @Singleton fun provideScheduleRepository(dataSource: ScheduleRepository.Network): ScheduleRepository = dataSource
 }
